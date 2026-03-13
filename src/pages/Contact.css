@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap");
+
+.contact-root {
+  background: #fff;
+  font-family: "DM Sans", sans-serif;
+  color: #1a1a1a;
+  padding: 40px 0 80px;
+}
+
+.contact-shell {
+  width: 100%;
+  max-width: 800px; /* Match main content width */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-form {
+  padding: 32px 32px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.08);
+}
+
+.form-title {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin: 0 0 24px;
+}
+
+.field-group {
+  margin-bottom: 16px;
+}
+
+.field-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9b8f83;
+  display: block;
+  margin-bottom: 6px;
+  transition: color 0.2s;
+}
+
+.field-label.active {
+  color: #9b7e5a;
+}
+
+.field-input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid #e8e3db;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #1a1a1a;
+  background: #faf9f7;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.field-input::placeholder {
+  color: #c8c2bb;
+}
+
+.field-input:focus {
+  border-color: #c4a97d;
+  background: #fff;
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+textarea.field-input {
+  resize: none;
+  line-height: 1.5;
+  min-height: 110px;
+}
+
+.submit-btn {
+  margin-top: 4px;
+  width: 100%;
+  padding: 13px 20px;
+  background: #1a1a1a;
+  color: #f5f0e8;
+  border: none;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.submit-btn:hover {
+  background: #9b7e5a;
+  transform: translateY(-1px);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.submit-btn svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.2s;
+}
+
+.submit-btn:hover svg {
+  transform: translateX(3px);
+}
+
+@media (max-width: 700px) {
+  .contact-form {
+    padding: 24px 20px;
+  }
+
+  .field-row {
+    grid-template-columns: 1fr;
+  }
+}
+

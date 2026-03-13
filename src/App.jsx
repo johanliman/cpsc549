@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Projects from './pages/Projects';
 import About from './pages/About';
-import './App.css';
+import Contact from "./pages/Contact";import './App.css';
 
 const Home = () => (
   <>
@@ -32,7 +32,9 @@ function App() {
 
             <nav className="site-nav">
               <Link to="/projects">Projects</Link>
+              <Link to="/contact">Contact</Link>
               <Link to="/about">About</Link>
+           
             </nav>
           </div>
         </header>
@@ -40,7 +42,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
+
         </Routes>
       </div>
     </Router>
